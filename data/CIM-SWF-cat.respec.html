@@ -1,0 +1,2591 @@
+
+<!DOCTYPE HTML><section id="cat" class="normative">
+   <h2>Gegevensdefinitie</h2>
+   <!--MIMCM-CIM-SWF-1.0-0-20230101-20230928-183946 imvertor Nightly-build.10-->
+   <section>
+      <h3>Objecttypen   </h3>
+      
+      <section id="global_class_CIMSWF_Samenwerkresultaat">
+         <h4>   Samenwerkresultaat</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Samenwerkresultaat</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Digitaal artefact dat ontstaat tijdens de samenwerking,, of resulteert als uitkomst
+                        van een samenwerking, en dat wordt bewaard in het samenwerkdossier.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Reactie">Reactie</a>
+                     
+                     [ 0 .. 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_wordtGecompleteerdDoor">wordt gecompleteerd door</a>
+                     
+                     Samenwerkresultaat
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Samenwerking_levert">levert</a>
+                     
+                     Samenwerkresultaat
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Initiator">
+         <h4>   Initiator</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Initiator</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>De deelnemer die de samenwerking start. Dit is beperkt tot het bevoegd gezag of de
+                        behandeldienst dat een Verzoek heeft ontvangen vanuit het DSO.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Initiator
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Initiator_beheert">beheert</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Initiator
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een deelnemer aan een samenwerking is óf de initiator van de samenwerking, óf een
+                        ketenpartner. Een deelnemer identificeert zich aan de hand van een OIN of Kv­K-nummer.
+                        Een deelnemer kent privileges die bepalen tot welke documenten hij/zij per samenwerking
+                        toegang heeft.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Reactie">
+         <h4>   Reactie</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Reactie</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Uitwisseling van informatie tussen de zender van een actieverzoek en de ontvanger
+                        ervan (uitvoerder), gericht op verduidelijking van de uitvoering van het actieverzoek.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Unieke aanduiding</th>
+                  <td>inhoud</td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Reactie_inhoud">inhoud</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Reactie
+                     [ 0 .. 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_wordtGecompleteerdDoor">wordt gecompleteerd door</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerkresultaat">Samenwerkresultaat</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Reactie
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_isOpgesteldDoor">is opgesteld door</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Reactie
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_gaatOver">gaat over</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Samenwerking">
+         <h4>   Samenwerking</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Samenwerking</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Informatie over, en behorend bij, het samenwerkingsproces dat door de initiator is
+                        gestart. Collectief noemen we dit ook wel het samenwerkdossier: een bij elkaar horende
+                        collectie van documenten op basis waarvan een samenwerking plaats vindt. Er is momenteel
+                        nog slechts sprake van een “fysieke opslag” van deze documenten, in de doorontwikkeling
+                        (suggestie) wordt ook gekeken naar “federatieve opslag” waarbij de documenten in de
+                        samenwerkmap zich fysiek in verschillende systemen bevinden.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Unieke aanduiding</th>
+                  <td>samenwerking­Id</td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_typering">typering</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="link" href="#global_class_CIMSWF_Samenwerkingtype">Samenwerkingtype</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_samenwerkingId">samenwerking­Id</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_status">status</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_titel">titel</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_beschrijving">beschrijving</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_kenmerkSysteem">kenmerk­Systeem</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Boolean</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Samenwerking_nummerBinnenSysteem">nummer­Binnen­Systeem</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Samenwerking
+                     [ 1 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Samenwerking_heeftBetrekkingOp">heeft betrekking op</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerksubject">Samenwerksubject</a>
+                     
+                     [ 1 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Samenwerking
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Samenwerking_genereert">genereert</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Attendering">Attendering</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Samenwerking
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Samenwerking_levert">levert</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerkresultaat">Samenwerkresultaat</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Initiator">Initiator</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Initiator_beheert">beheert</a>
+                     
+                     Samenwerking
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     [ 1 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Deelnemer_neemtDeelAan">neemt deel aan</a>
+                     
+                     Samenwerking
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                     
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Actieverzoek_heeftBetrekkingOp">heeft betrekking op</a>
+                     
+                     Samenwerking
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Deelnemer">
+         <h4>   Deelnemer</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Deelnemer</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Een deelnemer aan een samenwerking is óf de initiator van de samenwerking, óf een
+                        ketenpartner. Een deelnemer identificeert zich aan de hand van een OIN of Kv­K-nummer.
+                        Een deelnemer kent privileges die bepalen tot welke documenten hij/zij per samenwerking
+                        toegang heeft.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Deelnemer_privilege">privilege</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="link" href="#global_class_CIMSWF_Privilege">Privilege</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Deelnemer
+                     [ 1 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Deelnemer_vertegenwoordigt">vertegenwoordigt</a>
+                     
+                     
+                     <a class="external-link" href="https://geonovum.github.io/dso-cim-ex/#Organisatie">Organisatie</a>
+                     
+                     [ 0 .. 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Deelnemer
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Deelnemer_initieert">initieert</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Deelnemer
+                     [ 1 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Deelnemer_neemtDeelAan">neemt deel aan</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Reactie">Reactie</a>
+                     
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_isOpgesteldDoor">is opgesteld door</a>
+                     
+                     Deelnemer
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                     
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Actieverzoek_isGerichtAan">is gericht aan</a>
+                     
+                     Deelnemer
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Attendering">Attendering</a>
+                     
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Attendering_isGerichtAan">is gericht aan</a>
+                     
+                     Deelnemer
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Deelnemer
+                     is specialisatie van
+                     
+                     <a class="external-link" href="https://geonovum.github.io/dso-cim-ex/#Organisatie"></a>
+                     
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Actieverzoek">
+         <h4>   Actieverzoek</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Actieverzoek</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Verzoek dat een deelnemer aan de samenwerking richt aan een (1) andere deelnemer,
+                        veelal een adviesaanvraag. Een actieverzoek kan een productcode bevatten, dat refereert
+                        aan een te leveren product uit de PDC.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Unieke aanduiding</th>
+                  <td>actieverzoek­Id</td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Actieverzoek_actieverzoekId">actieverzoek­Id</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Actieverzoek_status">status</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="link" href="#global_class_CIMSWF_Actieverzoekstatus">Actieverzoekstatus</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Actieverzoek_titel">titel</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Actieverzoek_bericht">bericht</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Actieverzoek_melding">melding</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Actieverzoek
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Actieverzoek_bestelt">bestelt</a>
+                     
+                     
+                     <a class="external-link" href="https://geonovum.github.io/dso-cim-pdc/#Product">Product</a>
+                     
+                     [ 0 .. 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Actieverzoek
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Actieverzoek_isGerichtAan">is gericht aan</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Actieverzoek
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Actieverzoek_heeftBetrekkingOp">heeft betrekking op</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Reactie">Reactie</a>
+                     
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Reactie_gaatOver">gaat over</a>
+                     
+                     Actieverzoek
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Deelnemer_initieert">initieert</a>
+                     
+                     Actieverzoek
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Ketenpartner">
+         <h4>   Ketenpartner</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Ketenpartner</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Overige deelnemers, anders dan de initiator. Veelal overheidspartijen aangrenzend
+                        aan het werkgebied van de initiator of een andere bestuurslaag, veiligheidsregio’s
+                        en andere diensten met specifieke specialismen of verantwoordelijkheden. Incidenteel
+                        zal een ook niet-overheidspartij aan een samenwerking deelnemen. De complete lijst
+                        met categorieën van ketenpartners staat vermeld in bijlage D van de PIA (Privacy Impact
+                        Assessment, zie https://aandeslagmetdeomgevingswet.nl/publish/library/219/privacy<em>impact</em>assessment<em>digitaal</em>stelsel<em>omgevingswet</em>2019<em>v1</em>02.pdf).</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Ketenpartner
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een deelnemer aan een samenwerking is óf de initiator van de samenwerking, óf een
+                        ketenpartner. Een deelnemer identificeert zich aan de hand van een OIN of Kv­K-nummer.
+                        Een deelnemer kent privileges die bepalen tot welke documenten hij/zij per samenwerking
+                        toegang heeft.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      
+      <section id="global_class_CIMSWF_Attendering">
+         <h4>   Attendering</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Attendering</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Attendering aan een deelnemer dat een bepaalde gebeurtenis is opgetreden, bijvoorbeeld
+                        dat er een actieverzoek voor hem/haar is uitgezet, dat de deelnemer is uitgenodigd
+                        om deel te nemen aan een samenwerking, dat er een document is toegevoegd aan het samenwerkingsdossier,
+                        etc. </p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Toelichting</th>
+                  <td>
+                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_CIMSWF_Attendering_type">type</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     <a class="link" href="#global_class_CIMSWF_Attenderingstype">Attenderingstype</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Attendering
+                     [ 0 .. * ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Attendering_isGerichtAan">is gericht aan</a>
+                     
+                     
+                     <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_CIMSWF_Samenwerking_genereert">genereert</a>
+                     
+                     Attendering
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      </section>
+   <section>
+      <h3>Keuzen   </h3>
+      
+      <section id="global_class_CIMSWF_Samenwerksubject">
+         <h4>   Samenwerksubject</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Samenwerksubject</td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+      </section>
+   <section>
+      <h3>Enumeraties   </h3>
+      
+      <table style="width: 100%;">
+         <colgroup style="width: 30%;"></colgroup>
+         <colgroup style="width: 70%;"></colgroup>
+         <tbody>
+            <tr>
+               <th><a class="link" href="#detail_class_CIMSWF_Actieverzoekstatus">Actieverzoekstatus</a></th>
+               <td></td>
+            </tr>
+            <tr>
+               <th><a class="link" href="#detail_class_CIMSWF_Samenwerkingtype">Samenwerkingtype</a></th>
+               <td></td>
+            </tr>
+            <tr>
+               <th><a class="link" href="#detail_class_CIMSWF_Privilege">Privilege</a></th>
+               <td></td>
+            </tr>
+            <tr>
+               <th><a class="link" href="#detail_class_CIMSWF_Samenwerkingstatus">Samenwerkingstatus</a></th>
+               <td></td>
+            </tr>
+            <tr>
+               <th><a class="link" href="#detail_class_CIMSWF_Attenderingstype">Attenderingstype</a></th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section>
+      <h3>Attribuut- en relatiesoort details  </h3>
+      
+      <section>
+         <h4>Objecttype details  </h4>
+         
+         <section id="detail_class_CIMSWF_Initiator">
+            <h5>   Initiator</h5>
+            
+            <section id="detail_association_CIMSWF_Initiator_beheert">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Initiator">Initiator</a> beheert</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>beheert</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         <section id="detail_class_CIMSWF_Reactie">
+            <h5>   Reactie</h5>
+            
+            <section id="detail_attribute_CIMSWF_Reactie_inhoud">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> inhoud</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>inhoud</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Ja</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Reactie_wordtGecompleteerdDoor">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> wordt gecompleteerd door</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>wordt gecompleteerd door</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Samenwerkresultaat">Samenwerkresultaat</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Reactie_isOpgesteldDoor">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> is opgesteld door</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is opgesteld door</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Reactie_gaatOver">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> gaat over</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>gaat over</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         <section id="detail_class_CIMSWF_Samenwerking">
+            <h5>   Samenwerking</h5>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_typering">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> typering</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>typering</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="link" href="#detail_class_CIMSWF_Samenwerkingtype">Samenwerkingtype</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_samenwerkingId">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> samenwerking­Id</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>samenwerking­Id</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Ja</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_status">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> status</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>status</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_titel">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> titel</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>titel</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_beschrijving">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> beschrijving</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>beschrijving</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_kenmerkSysteem">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> kenmerk­Systeem</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>kenmerk­Systeem</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Boolean</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Samenwerking_nummerBinnenSysteem">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> nummer­Binnen­Systeem</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>nummer­Binnen­Systeem</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Samenwerking_heeftBetrekkingOp">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> heeft betrekking op</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft betrekking op</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           
+                           Keuze uit
+                           <a class="external-link" href="https://geonovum.github.io/dso-cim-op/#Omgevingsdocument">Omgevingsdocument</a>, <a class="external-link" href="https://geonovum.github.io/dso-cim-am/#Verzoek">Verzoek</a>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Samenwerking_genereert">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> genereert</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>genereert</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Attendering">Attendering</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Samenwerking_levert">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> levert</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>levert</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Samenwerkresultaat">Samenwerkresultaat</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         <section id="detail_class_CIMSWF_Deelnemer">
+            <h5>   Deelnemer</h5>
+            
+            <section id="detail_attribute_CIMSWF_Deelnemer_privilege">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> privilege</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>privilege</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="link" href="#detail_class_CIMSWF_Privilege">Privilege</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Deelnemer_vertegenwoordigt">
+               <h6>Externe koppeling details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> vertegenwoordigt</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>vertegenwoordigt</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="external-link" href="https://geonovum.github.io/dso-cim-ex/#Organisatie">Organisatie</a>
+                           </td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Deelnemer_initieert">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> initieert</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>initieert</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Deelnemer_neemtDeelAan">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> neemt deel aan</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>neemt deel aan</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         <section id="detail_class_CIMSWF_Actieverzoek">
+            <h5>   Actieverzoek</h5>
+            
+            <section id="detail_attribute_CIMSWF_Actieverzoek_actieverzoekId">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> actieverzoek­Id</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>actieverzoek­Id</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Ja</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Actieverzoek_status">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> status</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>status</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="link" href="#detail_class_CIMSWF_Actieverzoekstatus">Actieverzoekstatus</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Actieverzoek_titel">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> titel</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>titel</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Actieverzoek_bericht">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> bericht</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>bericht</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_attribute_CIMSWF_Actieverzoek_melding">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> melding</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>melding</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Actieverzoek_bestelt">
+               <h6>Externe koppeling details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> bestelt</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>bestelt</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="external-link" href="https://geonovum.github.io/dso-cim-pdc/#Product">Product</a>
+                           </td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Actieverzoek_isGerichtAan">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> is gericht aan</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is gericht aan</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Actieverzoek_heeftBetrekkingOp">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> heeft betrekking op</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft betrekking op</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Samenwerking">Samenwerking</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         
+         <section id="detail_class_CIMSWF_Attendering">
+            <h5>   Attendering</h5>
+            
+            <section id="detail_attribute_CIMSWF_Attendering_type">
+               <h6>Attribuutsoort details  <a href="#global_class_CIMSWF_Attendering">Attendering</a> type</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>type</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="link" href="#detail_class_CIMSWF_Attenderingstype">Attenderingstype</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td>
+                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
+                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Toelichting</th>
+                        <td>
+                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Attendering_isGerichtAan">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Attendering">Attendering</a> is gericht aan</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is gericht aan</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_CIMSWF_Deelnemer">Deelnemer</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         </section>
+      
+      
+      
+      <section>
+         <h4>Keuze  </h4>
+         
+         <section id="detail_class_CIMSWF_Samenwerksubject">
+            <h5>Keuze   Samenwerksubject</h5>
+            
+            <section id="detail_association_CIMSWF_Samenwerksubject_isEen">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerksubject">Samenwerksubject</a> is een</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is een</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="external-link" href="https://geonovum.github.io/dso-cim-op/#Omgevingsdocument">Omgevingsdocument</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            
+            <section id="detail_association_CIMSWF_Samenwerksubject_isEen">
+               <h6>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerksubject">Samenwerksubject</a> is een</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is een</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="external-link" href="https://geonovum.github.io/dso-cim-am/#Verzoek">Verzoek</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         </section>
+      
+      
+      </section>
+</section>
+<section id="lis" class="normative">
+   <h2>Inhoud van waardenlijsten</h2>
+   <!--MIMCM-CIM-SWF-1.0-0-20230101-20230928-183946 imvertor Nightly-build.10-->
+   <section id="detail_class_CIMSWF_Actieverzoekstatus">
+      <h3>Enumeratie details  Actieverzoekstatus</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Gereed</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Ingetrokken</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Open</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="detail_class_CIMSWF_Samenwerkingtype">
+      <h3>Enumeratie details  Samenwerkingtype</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Aanvraag</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Initiatief</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Omgevingsdocument</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="detail_class_CIMSWF_Privilege">
+      <h3>Enumeratie details  Privilege</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Beperkte toegang</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Volledige toegang</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="detail_class_CIMSWF_Samenwerkingstatus">
+      <h3>Enumeratie details  Samenwerkingstatus</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Gesloten</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Open</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="detail_class_CIMSWF_Attenderingstype">
+      <h3>Enumeratie details  Attenderingstype</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>Actieverzoek gereed gemeld</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Actieverzoek ingetrokken</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Actieverzoek ontvangen</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Deelnemer toegevoegd</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Deelnemer verwijderd</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Einde bewaartermijn nadert</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Rechten op samenwerking aangepast</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Rechten op samenwerkresultaat aangepast</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Samenwerking gestopt</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Samenwerking gewijzigd</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Samenwerkresultaat gewijzigd</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Samenwerkresultaat verwijderd</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Samenwerkresultaatt toegevoegd</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+</section>
