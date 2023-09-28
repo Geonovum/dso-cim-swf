@@ -44,13 +44,13 @@ let respecConfig = {
   authors:
     [
       {
-        name: "voornaam achternaam",
-        company: "Geonovum",
-        companyURL: "https://www.geonovum.nl",
+        name: "Nico Plat",
+        company: "RWS CIV",
+        companyURL: "https://www.rijkswaterstaat.nl/",
       }
     ],
   //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  github: "https://github.com/Geonovum/dso-cim-swf",
   // Create PDF and link to file in header (optional):
   alternateFormats: [
       {
