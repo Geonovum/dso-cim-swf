@@ -50,7 +50,7 @@ informatiedomein en de samenhang met aanpalende domeinen borgt.
 <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
-De onderstaande conceptuele informatiemodellen zijn beschikbaar¬. De modellen
+De onderstaande conceptuele informatiemodellen zijn beschikbaar. De modellen
 zijn in verschillende stadia van ontwikkeling en de links kunnen zowel naar
 ontwikkel- als publicatieversies verwijzen.
 
@@ -70,5 +70,3 @@ dwarsverbanden en afhankelijkheden tussen de verschillende domeinen. De
 conceptuele informatiemodellen worden derhalve in samenhang beheert en
 ontwikkelt, teneinde de semantische interoperabiliteit in en met het DSO te
 kunnen waarborgen.
-
-Dit document bevat de vastlegging en beschrijving van het Conceptueel Informatiemodel Template.
