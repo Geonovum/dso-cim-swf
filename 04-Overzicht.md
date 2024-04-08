@@ -23,10 +23,10 @@ Gegevens die te maken hebben met de samenwerking (metadata) kunnen worden toegev
 
 Na het starten van een samenwerking kunnen ketenpartners worden uitgenodigd om deel te nemen aan de betreffende samenwerking.
 Bij de uitnodiging kan de ketenpartner een 'privilege' worden toegekend, te weten 'Volledige toegang' of 'Beperkte toegang'. Bij privilege 'Beperkte toegang' heeft de betreffende ketenpartner alleen toegang tot documenten die als 'Vertrouwelijk' zijn gemarkeerd. Alle documenten die onderdeel zijn van een samenwerking, zijn vertrouwelijk, maar deze documenten bevatten geen persoonsgegevens en ook geen bedrijfsgevoelige gegevens. Bij privilege 'Volledige toegang' heeft de betreffende ketenpartner daarnaast toegang tot documenten die als 'Strikt vertrouwelijk' zijn gemarkeerd. Dergelijke documenten bevatten mogelijk wél persoonsgegevens en/of bedrijfsgevoelige gegevens. Alleen de initiator kan ketenpartners uitnodigen.
-Ketenpartners kunnen ook weer worden verwijderd uit een samenwerking. Ook kunnen de pvileges van een samenwerking worden aangepast.
+Ketenpartners kunnen ook weer worden verwijderd uit een samenwerking. Ook kunnen de privileges van een samenwerking worden aangepast.
 
-Aan een samenwrking kunnen (Omgevings)documenten worden toegevoegdC, waarbij het vertrouwelijkheidskenmerk ('Strikt vertrouwelijk' of 'Vertrouwelijk') van het document moet worden aangegeven.
-Deelnemers met privilege 'volledige toegang' hebben toegang tot alle documenten  in het samenwerkdossier, andere deelnemers alleen tot documenten met vertrouwelijkheidskenmerk 'Vertrouwelijk'.
+Aan een samenwrking kunnen (Omgevings)documenten worden toegevoegd, waarbij het vertrouwelijkheidskenmerk ('Strikt vertrouwelijk' of 'Vertrouwelijk') van het document moet worden aangegeven.
+Deelnemers met privilege 'Volledige toegang' hebben toegang tot alle documenten  in het samenwerkdossier, andere deelnemers alleen tot documenten met vertrouwelijkheidskenmerk 'Vertrouwelijk'.
 Documenten kunnen worden toegevoegd, gedownload, worden verwijderd, en de vertrouwelijkheidskenmerken kunnen worden aangepast.
 
 Een samenwerking krijgt verder vorm doordat deelnemers elkaar actieverzoeken kunnen sturen, waarbij typisch om de levering van een product of dienst wordt gevraagd, bijvoorbeeld het uitbrengen van een advies.
