@@ -273,13 +273,53 @@ ul.index code{color:inherit}
     }
   },
   "localBiblio": {
-    "SemVer": {
-      "href": "https://semver.org",
-      "title": "Semantic Versioning 2.0.0",
-      "authors": [
-        "T. Preston-Werner"
-      ],
-      "date": "June 2013"
+    "Basisgeometrie": {
+      "id": "Basisgeometrie",
+      "title": "Basisgeometrie",
+      "href": "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "30 september 2020"
+    },
+    "MIM": {
+      "id": "MIM",
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2022-02-17"
+    },
+    "CIMOW": {
+      "id": "CIMOW",
+      "title": "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
+      "href": "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2022-01-07"
+    },
+    "IMOW": {
+      "id": "IMOW",
+      "title": "Informatiemodel Omgevingswet (IMOW)",
+      "href": "https://geonovum.github.io/TPOD/CIMOW/IMOW_v2.0.2.pdf",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2023-01-09"
+    },
+    "OGAS": {
+      "id": "OGAS",
+      "title": "Overall Globale Architectuur Schets (OGAS) Versie 2.0.1",
+      "href": "https://iplo.nl/digitaal-stelsel/documenten/architectuurdocumenten/",
+      "status": "Definitief",
+      "publisher": "Programma Implementatie Omgevingswet",
+      "date": "2020-03-26"
+    },
+    "STOP20": {
+      "id": "STOP20",
+      "title": "Standaard Officiële Publicaties",
+      "href": "https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html",
+      "status": "Release Candidate",
+      "publisher": "KOOP",
+      "date": "2023-02-17"
     }
   },
   "title": "Conceptueel Informatiemodel Samenwerkfunctionaliteit",
@@ -376,7 +416,7 @@ heeft samenwerken (en daarmee ook het CIM-SWF) een generiek karakter.</p>
 
   <section id="voorwoord"><div class="header-wrapper"><h2 id="x1-voorwoord"><bdi class="secno">1. </bdi>Voorwoord</h2><a class="self-link" href="#voorwoord" aria-label="Permalink for Section 1."></a></div>
 <p>Dit document is tot stand gekomen als onderdeel van het DSO-programma. Het bevat de formele vastlegging en beschrijving van het Conceptuele Informatiemodel Samenwerkfunctionaliteit (SWF).</p>
-<p>Dit conceptuele informatiemodel volgt de regels voor opstellen van een informatiemodel zoals vastgelegd in de MIM [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-mim" title="Reference &quot;[MIM]&quot; not found." id="respec-offender-reference-mim-not-found">MIM</a></cite>]
+<p>Dit conceptuele informatiemodel volgt de regels voor opstellen van een informatiemodel zoals vastgelegd in de MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]
 standaard en wordt uitgedrukt in UML.</p>
 </section>
   <section id="inleiding"><div class="header-wrapper"><h2 id="x2-inleiding"><bdi class="secno">2. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 2."></a></div>
@@ -390,7 +430,7 @@ vanuit de inhoud van die begrippen (semantische relaties).  Dit modelleren we
 in conceptuele informatiemodellen (CIM) die een relatief stabiel raamwerk voor
 het werken onder architectuur en de basis voor de implementatie biedt.</p>
 <blockquote>
-<p>Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-mim" title="Reference &quot;[MIM]&quot; not found." id="respec-offender-reference-mim-not-found-0">MIM</a></cite>]
+<p>Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]
 Een conceptueel informatiemodel beschrijft de modellering van de werkelijkheid
 binnen het beschouwde domein door middel van de beschrijving van welke
 informatie (data met betekenis en structuur) een rol speelt. Een conceptueel
@@ -448,7 +488,7 @@ kunnen waarborgen.</p>
 </section>
   <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x3-toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 3."></a></div>
 <p>Het toepassingsgebied van CIM-SWF is de view van de DSO-LV op het domein "samenwerken" zoals dat in de context van het DSO wordt uitgevoerd. Hoewel generiek van opzet is de samenwerkfunctionaliteit tot nu toe gericht op "samenwerken aan behandelen" (van een verzoek). In de loop van 2024 zal hier "samenwerken aan toezicht en handhaving" worden toegevoegd. Het CIM-SWF bevat alle componenten die voor samenwerken relevant zijn.</p>
-<p>Voor al deze componenten geldt dat alleen de DSO-LV view op deze componenten wordt gegeven. De informatiemodellen worden conform MIM [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-mim" title="Reference &quot;[MIM]&quot; not found." id="respec-offender-reference-mim-not-found-1">MIM</a></cite>]
+<p>Voor al deze componenten geldt dat alleen de DSO-LV view op deze componenten wordt gegeven. De informatiemodellen worden conform MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]
 beschreven en zijn opgesteld in UML. Er is geen objectcatalogus opgenomen.</p>
 </section>
   <section id="overzicht"><div class="header-wrapper"><h2 id="x4-overzicht"><bdi class="secno">4. </bdi>Overzicht</h2><a class="self-link" href="#overzicht" aria-label="Permalink for Section 4."></a></div>
@@ -481,7 +521,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
 </section><section id="normatieve-referenties-0"><div class="header-wrapper"><h3 id="x4-3-normatieve-referenties"><bdi class="secno">4.3 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties-0" aria-label="Permalink for Section 4.3"></a></div>
 <p>CIM-SWF verwijst normatief naar de volgende standaard:</p>
 <ul>
-<li>MIM - Metamodel Informatiemodellering MIM [<cite><a class="bibref respec-offending-element" data-link-type="biblio" href="#bib-mim" title="Reference &quot;[MIM]&quot; not found." id="respec-offender-reference-mim-not-found-2">MIM</a></cite>].</li>
+<li>MIM - Metamodel Informatiemodellering MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>].</li>
 </ul>
 </section><section id="termen-en-definities"><div class="header-wrapper"><h3 id="x4-4-termen-en-definities"><bdi class="secno">4.4 </bdi>Termen en definities</h3><a class="self-link" href="#termen-en-definities" aria-label="Permalink for Section 4.4"></a></div>
 <p>TODO</p>
@@ -3212,7 +3252,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
     <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
     <dl class="bibliography"><dt id="bib-mim">[MIM]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. 2022-02-17. Definitief. URL: <a href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/">https://docs.geostandaarden.nl/mim/def-st-mim-20220217/</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
