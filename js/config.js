@@ -70,12 +70,21 @@ let respecConfig = {
       publisher: "Geonovum",
       date: "30 september 2020"
     },
+    GASSW: {
+      id: "GAS-SW",
+      title: "Globale Architectuurschets Samenwerkfunctionaliteit",
+      href: "https://iplo.nl/publish/library/219/dso_-_gas_-_samenwerkingsfunctionaliteit.pdf",
+      status: "Versie 2.0 (definitief)",
+      publisher: "Geonovum",
+      authors: ["Bas Crompvoets" , "Nico Plat" , "Silvion Moesan" ],
+      date: "2020-01-09"
+    },
     MIM: {
       id: "MIM",
       title: "MIM - Metamodel Informatie Modellering",
       href: "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
       status: "Definitief",
-      publisher: "Geonovum",
+      publisher: "Deelprogramma DSO",
       date: "2022-02-17"
     },
     CIMOW: {

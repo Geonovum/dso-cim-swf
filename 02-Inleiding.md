@@ -52,18 +52,18 @@ informatiedomein en de samenhang met aanpalende domeinen borgt.
 
 De onderstaande conceptuele informatiemodellen zijn beschikbaar. De modellen
 zijn in verschillende stadia van ontwikkeling en de links kunnen zowel naar
-ontwikkel- als publicatieversies verwijzen.
+werk- als publicatieversies verwijzen.
 
- - [CIM-AM](https://geonovum.github.io/dso-cim-am/): Conceptueel Informatiemodel Aanvragen en  meldingen.
- - [CIM-HLP](https://geonovum.github.io/dso-cim-hlp/): Conceptueel Informatiemodel Help en ondersteuning.
- - [CIM-MAC](https://geonovum.github.io/dso-cim-mac/) Conceptueel Informatiemodel Machtigen.
- - [CIM-OI](https://geonovum.github.io/dso-cim-oi/): Conceptueel Informatiemodel Omgevingsinformatie.
- - [CIM-OP](https://geonovum.github.io/dso-cim-op/): Conceptueel Informatiemodel Officiële publicaties.
- - [CIM-ORG](https://geonovum.github.io/dso-cim-org/): Conceptueel Informatiemodel (Overheids-)Organisaties.
- - [CIM-OW](https://geonovum.github.io/dso-cim-ow/): Conceptueel Informatiemodel Omgevingswet.
- - [CIM-PDC](https://geonovum.github.io/dso-cim-pdc/): Conceptueel Informatiemodel Producten- en Dienstencatalogus.
- - [CIM-SWF](https://geonovum.github.io/dso-cim-swf/): Conceptueel Informatiemodel Samenwerken.
- - [CIM-TR](https://geonovum.github.io/dso-cim-tr/): Conceptueel Informatiemodel Toepasbare regels.
+ - [CIM-AM](https://geonovum.github.io/dso-cim-am/): Conceptueel Informatiemodel Aanvragen en  meldingen (werkversie).
+ - [CIM-HLP](https://geonovum.github.io/dso-cim-hlp/): Conceptueel Informatiemodel Help en ondersteuning (werkversie).
+ - [CIM-MAC](https://geonovum.github.io/dso-cim-mac/) Conceptueel Informatiemodel Machtigen (werkversie).
+ - [CIM-OI](https://geonovum.github.io/dso-cim-oi/): Conceptueel Informatiemodel Omgevingsinformatie (werkversie).
+ - [CIM-OP](https://docs.geostandaarden.nl/dso/dso-cim-op/): Conceptueel Informatiemodel Officiële publicaties.
+ - [CIM-ORG](https://geonovum.github.io/dso-cim-org/): Conceptueel Informatiemodel (Overheids-)Organisaties (werkversie).
+ - [CIM-OW](https://geonovum.github.io/dso-cim-ow/): Conceptueel Informatiemodel Omgevingswet (werkversie).
+ - [CIM-PDC](https://geonovum.github.io/dso-cim-pdc/): Conceptueel Informatiemodel Producten- en Dienstencatalogus (werkversie).
+ - [CIM-SWF](https://geonovum.github.io/dso-cim-swf/): Conceptueel Informatiemodel Samenwerken (werkversie).
+ - [CIM-TR](https://geonovum.github.io/dso-cim-tr/): Conceptueel Informatiemodel Toepasbare regels (werkversie).
 
 Alhoewel elk conceptueel informatiemodel één informatiedomein afbeeldt, zijn er
 dwarsverbanden en afhankelijkheden tussen de verschillende domeinen. De

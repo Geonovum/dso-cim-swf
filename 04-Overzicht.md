@@ -35,21 +35,16 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
 
 Alle statuswijzigingen van entiteiten in het model, en alle andere events die tijdens een samenwerking optreden, warden via attenderingen (notificaties) gecommuniceerd aan de deelenemers.
 
-## Normatieve referenties
+## Uitganspunten van modellering
 
-CIM-SWF verwijst normatief naar de volgende standaard:
+CIM-SWF is gemodelleerd conform het Metamodel Informatiemodellering [[!MIM]] en is gebaseerd op het GAS samenwerkfuctionaliteit [[!GASSW]]
 
- - MIM - Metamodel Informatiemodellering MIM [[MIM]].
-
-## Termen en definities
-
-TODO
 
 ## Symbolen en afkortingen
 
- - API Application Programming Interface
- - DSO Digitaal Stelsel Omgevingswet
- - DSO-LV Digitaal Stelsel Omgevingswet - Landelijke Voorziening
- - MIM Metamodel voor Informatiemodellen
- - OGAS Overall Globale Architectuur Schets
- - UML Universal Modeling Language
+ - **API** Application Programming Interface
+ - **DSO** Digitaal Stelsel Omgevingswet
+ - **DSO-LV** Digitaal Stelsel Omgevingswet - Landelijke Voorziening
+ - **MIM** Metamodel voor Informatiemodellen
+ - **OGAS** Overall Globale Architectuur Schets
+ - **UML** Universal Modeling Language
