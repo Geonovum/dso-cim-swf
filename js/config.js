@@ -58,4 +58,66 @@ let respecConfig = {
           uri: "template.pdf",
       },
   ],
+  //-- localBiblio: lokale bibliografie, voor verwijzigingen
+  //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
+  localBiblio: 
+  {
+    Basisgeometrie: {
+      id: "Basisgeometrie",
+      title: "Basisgeometrie",
+      href: "https://docs.geostandaarden.nl/nen3610/def-st-basisgeometrie-20200930/",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "30 september 2020"
+    },
+    GASSW: {
+      id: "GAS-SW",
+      title: "Globale Architectuurschets Samenwerkfunctionaliteit",
+      href: "https://iplo.nl/publish/library/219/dso_-_gas_-_samenwerkingsfunctionaliteit.pdf",
+      status: "Versie 2.0 (definitief)",
+      publisher: "Geonovum",
+      authors: ["Bas Crompvoets" , "Nico Plat" , "Silvion Moesan" ],
+      date: "2020-01-09"
+    },
+    MIM: {
+      id: "MIM",
+      title: "MIM - Metamodel Informatie Modellering",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      status: "Definitief",
+      publisher: "Deelprogramma DSO",
+      date: "2022-02-17"
+    },
+    CIMOW: {
+      id: "CIMOW",
+      title: "Conceptueel Informatiemodel Omgevingswet (CIMOW)",
+      href: "https://geonovum.github.io/TPOD/CIMOW/CIMOW_v2.1.0.pdf",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2022-01-07"
+    },
+    IMOW: {
+      id: "IMOW",
+      title: "Informatiemodel Omgevingswet (IMOW)",
+      href: "https://geonovum.github.io/TPOD/CIMOW/IMOW_v2.0.2.pdf",
+      status: "Definitief",
+      publisher: "Geonovum",
+      date: "2023-01-09"
+    },
+	OGAS: {
+      id: "OGAS",
+      title: "Overall Globale Architectuur Schets (OGAS) Versie 2.0.1",
+      href: "https://iplo.nl/digitaal-stelsel/documenten/architectuurdocumenten/",
+      status: "Definitief",
+      publisher: "Programma Implementatie Omgevingswet",
+      date: "2020-03-26"
+    },
+    STOP20: {
+      id: "STOP20",
+      title: "Standaard Officiële Publicaties",
+      href: "https://koop.gitlab.io/STOP/standaard/2.0.0-rc/index.html",
+      status: "Release Candidate",
+      publisher: "KOOP",
+      date: "2023-02-17"
+    },
+  },
 };
