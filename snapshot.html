@@ -3,6 +3,19 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 34.1.4">
 <style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -431,14 +444,15 @@ toegekend aan woorden (begrippenkader) en wat de relatie is tussen begrippen,
 vanuit de inhoud van die begrippen (semantische relaties).  Dit modelleren we
 in conceptuele informatiemodellen (CIM) die een relatief stabiel raamwerk voor
 het werken onder architectuur en de basis voor de implementatie biedt.</p>
-<blockquote>
-<p>Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span></div><aside class="">
+Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [<cite><a class="bibref" data-link-type="biblio" href="#bib-mim" title="MIM - Metamodel Informatie Modellering">MIM</a></cite>]
 Een conceptueel informatiemodel beschrijft de modellering van de werkelijkheid
 binnen het beschouwde domein door middel van de beschrijving van welke
 informatie (data met betekenis en structuur) een rol speelt. Een conceptueel
 informatiemodel is hierbij onafhankelijk van het ontwerp van en de
 implementatie in systemen. Het geeft een zo getrouw mogelijke beschrijving van
-die werkelijkheid en is in natuurlijke taal geformuleerd.</p>
+die werkelijkheid en is in natuurlijke taal geformuleerd.
+
 <p>Een dergelijk model definieert het ‘wat’: welke 'onderwerpen van gesprek'
 ('concepten', 'dingen’) worden onderscheiden in de beschouwde werkelijkheid.
 Wat betekenen zij, hoe verhouden ze zich tot elkaar en welke informatie is
@@ -454,7 +468,8 @@ van de informatie die beschikbaar is zijn heel precies en concreet.</p>
 zodat ‘de business’ en de ICT-specialisten elkaar (gaan) begrijpen voor wat
 betreft de informatie die in het domein wordt geregistreerd en/of kan worden
 uitgewisseld.</p>
-</blockquote>
+</aside></div>
+
 <p>Binnen DSO worden verschillende informatiedomeinen onderkend: elk
 informatiedomein groepeert informatieobjecten met maximale samenhang en vormt
 logische bouwblokken voor de informatievoorziening van DSO.  </p>
@@ -505,8 +520,8 @@ Ondanks de focus op behandelen van een verzoek en toezicht en handhaving is de S
 opzet, met als kernfunctionaliteit 
 het uitwisselen van documenten
 en het uitzetten van actieverzoeken tussen de deelnemers aan de samenwerking onderling.</p>
-<p>Tijdens het starten van een samenwerking wordt een samenwerkingsdossier (in het CIM noemen we dit simpelweg: samenwerking) met bijbehorende 
-identificatie gecreëerd (het samenwerkingID) en wordt (optioneel, en alleen als het om het behandelene van een verzoek gaat) een bijbehorend 'verzoek' 
+<p>Tijdens het starten van een samenwerking wordt een samenwerkingsdossier (in het CIM noemen we dit simpelweg: samenwerking) met bijbehorende
+identificatie gecreëerd (het samenwerkingID) en wordt (optioneel, en alleen als het om het behandelen van een verzoek gaat) een bijbehorend 'verzoek' 
 (vergunningsaanvraag) opgehaald uit het DSO-LV en in het samenwerkdossier  geplaatst. 
 Een samenwerking kan alleen door een overheidsorgaan worden gestart: de initiator van de samenwerking.
 Gegevens die te maken hebben met de samenwerking (metadata) kunnen worden toegevoegd, gewijzigd en ingezien (toevoegen en wijzigen alleen door de initiator, inzien door alle deelnemers)</p>
