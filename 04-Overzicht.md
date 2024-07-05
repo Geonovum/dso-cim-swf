@@ -15,8 +15,8 @@ opzet, met als kernfunctionaliteit
 het uitwisselen van documenten
 en het uitzetten van actieverzoeken tussen de deelnemers aan de samenwerking onderling.
 
-Tijdens het starten van een samenwerking wordt een samenwerkingsdossier (in het CIM noemen we dit simpelweg: samenwerking) met bijbehorende 
-identificatie gecreëerd (het samenwerkingID) en wordt (optioneel, en alleen als het om het behandelene van een verzoek gaat) een bijbehorend 'verzoek' 
+Tijdens het starten van een samenwerking wordt een samenwerkingsdossier (in het CIM noemen we dit simpelweg: samenwerking) met bijbehorende
+identificatie gecreëerd (het samenwerkingID) en wordt (optioneel, en alleen als het om het behandelen van een verzoek gaat) een bijbehorend 'verzoek' 
 (vergunningsaanvraag) opgehaald uit het DSO-LV en in het samenwerkdossier  geplaatst. 
 Een samenwerking kan alleen door een overheidsorgaan worden gestart: de initiator van de samenwerking.
 Gegevens die te maken hebben met de samenwerking (metadata) kunnen worden toegevoegd, gewijzigd en ingezien (toevoegen en wijzigen alleen door de initiator, inzien door alle deelnemers)

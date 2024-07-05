@@ -10,31 +10,33 @@ vanuit de inhoud van die begrippen (semantische relaties).  Dit modelleren we
 in conceptuele informatiemodellen (CIM) die een relatief stabiel raamwerk voor
 het werken onder architectuur en de basis voor de implementatie biedt.
 
-> Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [[MIM]]
-> Een conceptueel informatiemodel beschrijft de modellering van de werkelijkheid
-> binnen het beschouwde domein door middel van de beschrijving van welke
-> informatie (data met betekenis en structuur) een rol speelt. Een conceptueel
-> informatiemodel is hierbij onafhankelijk van het ontwerp van en de
-> implementatie in systemen. Het geeft een zo getrouw mogelijke beschrijving van
-> die werkelijkheid en is in natuurlijke taal geformuleerd.
->
-> Een dergelijk model definieert het ‘wat’: welke 'onderwerpen van gesprek'
-> ('concepten', 'dingen’) worden onderscheiden in de beschouwde werkelijkheid.
-> Wat betekenen zij, hoe verhouden ze zich tot elkaar en welke informatie is
-> daarvan relevant. Deze informatie wordt gemodelleerd als informatieobjecten
-> met eigenschappen/kenmerken, oftewel waarvoor data beschikbaar is (of zal
-> zijn) en wordt ondergebracht in een informatiemodel. Dit informatiemodel
-> dient als taal waarmee domeinexperts kunnen communiceren met
-> informatieanalisten en verschaft een eenduidige interpretatie van die
-> werkelijkheid ten behoeve van deze communicatie.
->
-> Met conceptueel wordt niet bedoeld abstract of hoog over, de beschrijvingen
-> van de informatie die beschikbaar is zijn heel precies en concreet.
->
-> Een conceptueel informatiemodel wordt opgesteld voor gebruik door mensen,
-> zodat ‘de business’ en de ICT-specialisten elkaar (gaan) begrijpen voor wat
-> betreft de informatie die in het domein wordt geregistreerd en/of kan worden
-> uitgewisseld.
+<aside class="note">
+Conceptuele informatiemodellen (CIMs) – Definitie volgens MIM [[MIM]]
+Een conceptueel informatiemodel beschrijft de modellering van de werkelijkheid
+binnen het beschouwde domein door middel van de beschrijving van welke
+informatie (data met betekenis en structuur) een rol speelt. Een conceptueel
+informatiemodel is hierbij onafhankelijk van het ontwerp van en de
+implementatie in systemen. Het geeft een zo getrouw mogelijke beschrijving van
+die werkelijkheid en is in natuurlijke taal geformuleerd.
+
+Een dergelijk model definieert het ‘wat’: welke 'onderwerpen van gesprek'
+('concepten', 'dingen’) worden onderscheiden in de beschouwde werkelijkheid.
+Wat betekenen zij, hoe verhouden ze zich tot elkaar en welke informatie is
+daarvan relevant. Deze informatie wordt gemodelleerd als informatieobjecten
+met eigenschappen/kenmerken, oftewel waarvoor data beschikbaar is (of zal
+zijn) en wordt ondergebracht in een informatiemodel. Dit informatiemodel
+dient als taal waarmee domeinexperts kunnen communiceren met
+informatieanalisten en verschaft een eenduidige interpretatie van die
+werkelijkheid ten behoeve van deze communicatie.
+
+Met conceptueel wordt niet bedoeld abstract of hoog over, de beschrijvingen
+van de informatie die beschikbaar is zijn heel precies en concreet.
+
+Een conceptueel informatiemodel wordt opgesteld voor gebruik door mensen,
+zodat ‘de business’ en de ICT-specialisten elkaar (gaan) begrijpen voor wat
+betreft de informatie die in het domein wordt geregistreerd en/of kan worden
+uitgewisseld.
+</aside>
 
 Binnen DSO worden verschillende informatiedomeinen onderkend: elk
 informatiedomein groepeert informatieobjecten met maximale samenhang en vormt
