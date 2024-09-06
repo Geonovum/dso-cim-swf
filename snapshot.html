@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 34.1.4">
+<meta name="generator" content="ReSpec 35.1.1">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -9,7 +9,7 @@
 span.warning{padding:.1em .5em .15em}
 .issue.closed span.issue-number{text-decoration:line-through}
 .issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
 .warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
 li.task-list-item{list-style:none}
 input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
@@ -17,13 +17,13 @@ input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
 </style>
 <style>
 dfn{cursor:pointer}
-.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
-.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
-.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
 .dfn-panel *{margin:0}
-.dfn-panel b{display:block;color:#000;margin-top:.25em}
-.dfn-panel ul a[href]{color:#333}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
 .dfn-panel>div{display:flex}
 .dfn-panel a.self-link{font-weight:700;margin-right:auto}
 .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
@@ -61,8 +61,6 @@ div.imageinfo.overview img {max-width: none;}
 25%{transform:scale(1.25,1.25);opacity:.75}
 100%{transform:scale(1,1)}
 }
-:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
-dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
 a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
 a.bibref{text-decoration:none}
@@ -76,20 +74,8 @@ a.bibref{text-decoration:none}
 cite .bibref{font-style:normal}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
-.toc a,.tof a{text-decoration:none}
-a .figno,a .secno{color:#000}
 ol.tof,ul.tof{list-style:none outside none}
 .caption{margin-top:.5em;font-style:italic}
-table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
-.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
-.simple th a{color:#fff;padding:3px 5px;text-align:left}
-.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
-.simple td{padding:3px 10px;border-top:1px solid #ddd}
-.simple tr:nth-child(even){background:#f0f6ff}
-.section dd>p:first-child{margin-top:0}
-.section dd>p:last-child{margin-bottom:0}
-.section dd{margin-bottom:1em}
-.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
 #issue-summary>ul{column-count:2}
 #issue-summary li{list-style:none;display:inline-block}
 details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
@@ -340,6 +326,7 @@ img.license{float:left;padding-right:5px}
   "title": "Conceptueel Informatiemodel Samenwerkfunctionaliteit",
   "specStatus": "wv",
   "specType": "IM",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "pubDomain": "dso",
   "licence": "cc-by",
   "shortName": "dso-cim-swf",
@@ -365,7 +352,7 @@ img.license{float:left;padding-right:5px}
     }
   ]
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
@@ -374,7 +361,7 @@ img.license{float:left;padding-right:5px}
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-07-09">09 juli 2024</time>
+      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
     </h2>
     <dl>
       
@@ -579,7 +566,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Samenwerkresultaat">
          <div class="header-wrapper"><h4 id="x5-3-1-samenwerkresultaat"><bdi class="secno">5.3.1 </bdi>   Samenwerkresultaat</h4><a class="self-link" href="#global_class_CIMSWF_Samenwerkresultaat" aria-label="Permalink for Section 5.3.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -607,7 +594,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Samenwerkresultaat" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -651,7 +638,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Initiator">
          <div class="header-wrapper"><h4 id="x5-3-2-initiator"><bdi class="secno">5.3.2 </bdi>   Initiator</h4><a class="self-link" href="#global_class_CIMSWF_Initiator" aria-label="Permalink for Section 5.3.2"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -679,7 +666,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Initiator" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -725,7 +712,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Reactie">
          <div class="header-wrapper"><h4 id="x5-3-3-reactie"><bdi class="secno">5.3.3 </bdi>   Reactie</h4><a class="self-link" href="#global_class_CIMSWF_Reactie" aria-label="Permalink for Section 5.3.3"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -756,7 +743,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          
          <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMSWF_Reactie" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -785,7 +772,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Reactie" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -843,7 +830,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Samenwerking">
          <div class="header-wrapper"><h4 id="x5-3-4-samenwerking"><bdi class="secno">5.3.4 </bdi>   Samenwerking</h4><a class="self-link" href="#global_class_CIMSWF_Samenwerking" aria-label="Permalink for Section 5.3.4"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -878,7 +865,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMSWF_Samenwerking" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -992,7 +979,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Samenwerking" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1092,7 +1079,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Deelnemer">
          <div class="header-wrapper"><h4 id="x5-3-5-deelnemer"><bdi class="secno">5.3.5 </bdi>   Deelnemer</h4><a class="self-link" href="#global_class_CIMSWF_Deelnemer" aria-label="Permalink for Section 5.3.5"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1121,7 +1108,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMSWF_Deelnemer" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1154,7 +1141,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Deelnemer" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1264,7 +1251,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Actieverzoek">
          <div class="header-wrapper"><h4 id="x5-3-6-actieverzoek"><bdi class="secno">5.3.6 </bdi>   Actieverzoek</h4><a class="self-link" href="#global_class_CIMSWF_Actieverzoek" aria-label="Permalink for Section 5.3.6"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1296,7 +1283,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMSWF_Actieverzoek" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1382,7 +1369,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Actieverzoek" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1468,7 +1455,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Ketenpartner">
          <div class="header-wrapper"><h4 id="x5-3-7-ketenpartner"><bdi class="secno">5.3.7 </bdi>   Ketenpartner</h4><a class="self-link" href="#global_class_CIMSWF_Ketenpartner" aria-label="Permalink for Section 5.3.7"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1500,7 +1487,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Ketenpartner" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1532,7 +1519,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Attendering">
          <div class="header-wrapper"><h4 id="x5-3-8-attendering"><bdi class="secno">5.3.8 </bdi>   Attendering</h4><a class="self-link" href="#global_class_CIMSWF_Attendering" aria-label="Permalink for Section 5.3.8"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1572,7 +1559,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMSWF_Attendering" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1619,7 +1606,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
       <section id="global_class_CIMSWF_Samenwerksubject">
          <div class="header-wrapper"><h4 id="x5-4-1-samenwerksubject"><bdi class="secno">5.4.1 </bdi>   Samenwerksubject</h4><a class="self-link" href="#global_class_CIMSWF_Samenwerksubject" aria-label="Permalink for Section 5.4.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1645,7 +1632,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
    <section id="enumeraties">
       <div class="header-wrapper"><h3 id="x5-5-enumeraties"><bdi class="secno">5.5 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.5"></a></div>
       
-      <table style="width: 100%;" class="simple">
+      <table style="width: 100%;">
          <colgroup style="width: 30%;"></colgroup>
          <colgroup style="width: 70%;"></colgroup>
          <tbody>
@@ -1681,7 +1668,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-1-1-relatiesoort-details-initiator-beheert"><bdi class="secno">5.6.1.1.1 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Initiator">Initiator</a> beheert</h6><a class="self-link" href="#detail_association_CIMSWF_Initiator_beheert" aria-label="Permalink for Section 5.6.1.1.1"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1710,7 +1697,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Reactie_inhoud">
                <div class="header-wrapper"><h6 id="x5-6-1-2-1-attribuutsoort-details-reactie-inhoud"><bdi class="secno">5.6.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> inhoud</h6><a class="self-link" href="#detail_attribute_CIMSWF_Reactie_inhoud" aria-label="Permalink for Section 5.6.1.2.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1748,7 +1735,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-2-2-relatiesoort-details-reactie-wordt-gecompleteerd-door"><bdi class="secno">5.6.1.2.2 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> wordt gecompleteerd door</h6><a class="self-link" href="#detail_association_CIMSWF_Reactie_wordtGecompleteerdDoor" aria-label="Permalink for Section 5.6.1.2.2"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1774,7 +1761,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-2-3-relatiesoort-details-reactie-is-opgesteld-door"><bdi class="secno">5.6.1.2.3 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> is opgesteld door</h6><a class="self-link" href="#detail_association_CIMSWF_Reactie_isOpgesteldDoor" aria-label="Permalink for Section 5.6.1.2.3"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1800,7 +1787,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-2-4-relatiesoort-details-reactie-gaat-over"><bdi class="secno">5.6.1.2.4 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Reactie">Reactie</a> gaat over</h6><a class="self-link" href="#detail_association_CIMSWF_Reactie_gaatOver" aria-label="Permalink for Section 5.6.1.2.4"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1829,7 +1816,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_typering">
                <div class="header-wrapper"><h6 id="x5-6-1-3-1-attribuutsoort-details-samenwerking-typering"><bdi class="secno">5.6.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> typering</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_typering" aria-label="Permalink for Section 5.6.1.3.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1875,7 +1862,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_samenwerkingId">
                <div class="header-wrapper"><h6 id="x5-6-1-3-2-attribuutsoort-details-samenwerking-samenwerking-id"><bdi class="secno">5.6.1.3.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> samenwerking­Id</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_samenwerkingId" aria-label="Permalink for Section 5.6.1.3.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1921,7 +1908,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_status">
                <div class="header-wrapper"><h6 id="x5-6-1-3-3-attribuutsoort-details-samenwerking-status"><bdi class="secno">5.6.1.3.3 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> status</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_status" aria-label="Permalink for Section 5.6.1.3.3"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1967,7 +1954,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_titel">
                <div class="header-wrapper"><h6 id="x5-6-1-3-4-attribuutsoort-details-samenwerking-titel"><bdi class="secno">5.6.1.3.4 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> titel</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_titel" aria-label="Permalink for Section 5.6.1.3.4"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2013,7 +2000,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_beschrijving">
                <div class="header-wrapper"><h6 id="x5-6-1-3-5-attribuutsoort-details-samenwerking-beschrijving"><bdi class="secno">5.6.1.3.5 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> beschrijving</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_beschrijving" aria-label="Permalink for Section 5.6.1.3.5"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2060,7 +2047,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_kenmerkSysteem">
                <div class="header-wrapper"><h6 id="x5-6-1-3-6-attribuutsoort-details-samenwerking-kenmerk-systeem"><bdi class="secno">5.6.1.3.6 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> kenmerk­Systeem</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_kenmerkSysteem" aria-label="Permalink for Section 5.6.1.3.6"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2107,7 +2094,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Samenwerking_nummerBinnenSysteem">
                <div class="header-wrapper"><h6 id="x5-6-1-3-7-attribuutsoort-details-samenwerking-nummer-binnen-systeem"><bdi class="secno">5.6.1.3.7 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> nummer­Binnen­Systeem</h6><a class="self-link" href="#detail_attribute_CIMSWF_Samenwerking_nummerBinnenSysteem" aria-label="Permalink for Section 5.6.1.3.7"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2156,7 +2143,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-3-8-relatiesoort-details-samenwerking-heeft-betrekking-op"><bdi class="secno">5.6.1.3.8 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> heeft betrekking op</h6><a class="self-link" href="#detail_association_CIMSWF_Samenwerking_heeftBetrekkingOp" aria-label="Permalink for Section 5.6.1.3.8"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2185,7 +2172,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-3-9-relatiesoort-details-samenwerking-genereert"><bdi class="secno">5.6.1.3.9 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> genereert</h6><a class="self-link" href="#detail_association_CIMSWF_Samenwerking_genereert" aria-label="Permalink for Section 5.6.1.3.9"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2211,7 +2198,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-3-10-relatiesoort-details-samenwerking-levert"><bdi class="secno">5.6.1.3.10 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerking">Samenwerking</a> levert</h6><a class="self-link" href="#detail_association_CIMSWF_Samenwerking_levert" aria-label="Permalink for Section 5.6.1.3.10"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2240,7 +2227,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Deelnemer_privilege">
                <div class="header-wrapper"><h6 id="x5-6-1-4-1-attribuutsoort-details-deelnemer-privilege"><bdi class="secno">5.6.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> privilege</h6><a class="self-link" href="#detail_attribute_CIMSWF_Deelnemer_privilege" aria-label="Permalink for Section 5.6.1.4.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2287,7 +2274,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_association_CIMSWF_Deelnemer_vertegenwoordigt">
                <div class="header-wrapper"><h6 id="x5-6-1-4-2-externe-koppeling-details-deelnemer-vertegenwoordigt"><bdi class="secno">5.6.1.4.2 </bdi>Externe koppeling details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> vertegenwoordigt</h6><a class="self-link" href="#detail_association_CIMSWF_Deelnemer_vertegenwoordigt" aria-label="Permalink for Section 5.6.1.4.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2309,7 +2296,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-4-3-relatiesoort-details-deelnemer-initieert"><bdi class="secno">5.6.1.4.3 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> initieert</h6><a class="self-link" href="#detail_association_CIMSWF_Deelnemer_initieert" aria-label="Permalink for Section 5.6.1.4.3"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2335,7 +2322,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-4-4-relatiesoort-details-deelnemer-neemt-deel-aan"><bdi class="secno">5.6.1.4.4 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Deelnemer">Deelnemer</a> neemt deel aan</h6><a class="self-link" href="#detail_association_CIMSWF_Deelnemer_neemtDeelAan" aria-label="Permalink for Section 5.6.1.4.4"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2364,7 +2351,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Actieverzoek_actieverzoekId">
                <div class="header-wrapper"><h6 id="x5-6-1-5-1-attribuutsoort-details-actieverzoek-actieverzoek-id"><bdi class="secno">5.6.1.5.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> actieverzoek­Id</h6><a class="self-link" href="#detail_attribute_CIMSWF_Actieverzoek_actieverzoekId" aria-label="Permalink for Section 5.6.1.5.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2410,7 +2397,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Actieverzoek_status">
                <div class="header-wrapper"><h6 id="x5-6-1-5-2-attribuutsoort-details-actieverzoek-status"><bdi class="secno">5.6.1.5.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> status</h6><a class="self-link" href="#detail_attribute_CIMSWF_Actieverzoek_status" aria-label="Permalink for Section 5.6.1.5.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2456,7 +2443,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Actieverzoek_titel">
                <div class="header-wrapper"><h6 id="x5-6-1-5-3-attribuutsoort-details-actieverzoek-titel"><bdi class="secno">5.6.1.5.3 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> titel</h6><a class="self-link" href="#detail_attribute_CIMSWF_Actieverzoek_titel" aria-label="Permalink for Section 5.6.1.5.3"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2503,7 +2490,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Actieverzoek_bericht">
                <div class="header-wrapper"><h6 id="x5-6-1-5-4-attribuutsoort-details-actieverzoek-bericht"><bdi class="secno">5.6.1.5.4 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> bericht</h6><a class="self-link" href="#detail_attribute_CIMSWF_Actieverzoek_bericht" aria-label="Permalink for Section 5.6.1.5.4"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2550,7 +2537,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_attribute_CIMSWF_Actieverzoek_melding">
                <div class="header-wrapper"><h6 id="x5-6-1-5-5-attribuutsoort-details-actieverzoek-melding"><bdi class="secno">5.6.1.5.5 </bdi>Attribuutsoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> melding</h6><a class="self-link" href="#detail_attribute_CIMSWF_Actieverzoek_melding" aria-label="Permalink for Section 5.6.1.5.5"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2596,7 +2583,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
             <section id="detail_association_CIMSWF_Actieverzoek_bestelt">
                <div class="header-wrapper"><h6 id="x5-6-1-5-6-externe-koppeling-details-actieverzoek-bestelt"><bdi class="secno">5.6.1.5.6 </bdi>Externe koppeling details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> bestelt</h6><a class="self-link" href="#detail_association_CIMSWF_Actieverzoek_bestelt" aria-label="Permalink for Section 5.6.1.5.6"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2618,7 +2605,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-5-7-relatiesoort-details-actieverzoek-is-gericht-aan"><bdi class="secno">5.6.1.5.7 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> is gericht aan</h6><a class="self-link" href="#detail_association_CIMSWF_Actieverzoek_isGerichtAan" aria-label="Permalink for Section 5.6.1.5.7"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2644,7 +2631,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-5-8-relatiesoort-details-actieverzoek-heeft-betrekking-op"><bdi class="secno">5.6.1.5.8 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Actieverzoek">Actieverzoek</a> heeft betrekking op</h6><a class="self-link" href="#detail_association_CIMSWF_Actieverzoek_heeftBetrekkingOp" aria-label="Permalink for Section 5.6.1.5.8"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2675,7 +2662,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-1-6-1-relatiesoort-details-attendering-is-gericht-aan"><bdi class="secno">5.6.1.6.1 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Attendering">Attendering</a> is gericht aan</h6><a class="self-link" href="#detail_association_CIMSWF_Attendering_isGerichtAan" aria-label="Permalink for Section 5.6.1.6.1"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2711,7 +2698,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-2-1-1-relatiesoort-details-samenwerksubject-omgevingsdocument"><bdi class="secno">5.6.2.1.1 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerksubject">Samenwerksubject</a> omgevingsdocument</h6><a class="self-link" href="#detail_association_CIMSWF_Samenwerksubject_omgevingsdocument" aria-label="Permalink for Section 5.6.2.1.1"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2737,7 +2724,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
                <div class="header-wrapper"><h6 id="x5-6-2-1-2-relatiesoort-details-samenwerksubject-verzoek"><bdi class="secno">5.6.2.1.2 </bdi>Relatiesoort details  <a href="#global_class_CIMSWF_Samenwerksubject">Samenwerksubject</a> verzoek</h6><a class="self-link" href="#detail_association_CIMSWF_Samenwerksubject_verzoek" aria-label="Permalink for Section 5.6.2.1.2"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2770,7 +2757,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
    <section id="detail_class_CIMSWF_Actieverzoekstatus">
       <div class="header-wrapper"><h3 id="x6-1-enumeratie-details-actieverzoekstatus"><bdi class="secno">6.1 </bdi>Enumeratie details  Actieverzoekstatus</h3><a class="self-link" href="#detail_class_CIMSWF_Actieverzoekstatus" aria-label="Permalink for Section 6.1"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2779,7 +2766,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2841,7 +2828,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
    <section id="detail_class_CIMSWF_Samenwerkingtype">
       <div class="header-wrapper"><h3 id="x6-2-enumeratie-details-samenwerkingtype"><bdi class="secno">6.2 </bdi>Enumeratie details  Samenwerkingtype</h3><a class="self-link" href="#detail_class_CIMSWF_Samenwerkingtype" aria-label="Permalink for Section 6.2"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2850,7 +2837,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2880,7 +2867,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
    <section id="detail_class_CIMSWF_Privilege">
       <div class="header-wrapper"><h3 id="x6-3-enumeratie-details-privilege"><bdi class="secno">6.3 </bdi>Enumeratie details  Privilege</h3><a class="self-link" href="#detail_class_CIMSWF_Privilege" aria-label="Permalink for Section 6.3"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2889,7 +2876,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
@@ -2918,7 +2905,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
    <section id="detail_class_CIMSWF_Samenwerkingstatus">
       <div class="header-wrapper"><h3 id="x6-4-enumeratie-details-samenwerkingstatus"><bdi class="secno">6.4 </bdi>Enumeratie details  Samenwerkingstatus</h3><a class="self-link" href="#detail_class_CIMSWF_Samenwerkingstatus" aria-label="Permalink for Section 6.4"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2927,7 +2914,7 @@ Elke deelnemer aan de samenwerking kan een actieverzoek uitzetten voor elke ande
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>
