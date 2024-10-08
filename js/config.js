@@ -4,10 +4,10 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Conceptueel Informatiemodel Samenwerkfunctionaliteit",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
+  //specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
+  specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   specType: "IM",                 // Informatie Model
@@ -16,14 +16,12 @@ let respecConfig = {
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   pubDomain: "dso",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
-  //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
-  //licence: "cc0",                 // Public Domain Dedication
-  licence: "cc-by",                 // Attribution, met bronvermelding
+  license: "cc-by",                 // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
   shortName: "dso-cim-swf",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
-  //publishDate: "2023-03-28",
+  publishDate: "2024-10-08",
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
@@ -82,11 +80,11 @@ let respecConfig = {
     },
     MIM: {
       id: "MIM",
-      title: "MIM - Metamodel Informatie Modellering",
-      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20220217/",
+      title: "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      href: "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
       status: "Definitief",
-      publisher: "Deelprogramma DSO",
-      date: "2022-02-17"
+      publisher: "Geonovum",
+      date: "2024-06-13"
     },
     CIMOW: {
       id: "CIMOW",
