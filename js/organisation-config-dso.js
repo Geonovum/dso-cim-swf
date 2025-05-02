@@ -92,7 +92,7 @@ var organisationConfig = {
     "pubDomain",
     "/",
     "shortName",
-    "/",
+    "-",
     "publishDate",
   ],
   prevVersion: [
@@ -100,7 +100,7 @@ var organisationConfig = {
     "pubDomain",
     "/",
     "shortName",
-    "/",
+    "-",
     "previousPublishDate",
   ],
   logos: [
