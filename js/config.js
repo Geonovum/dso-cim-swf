@@ -7,7 +7,7 @@ let respecConfig = {
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  specStatus: "def",              // Vastgestelde versie
+  //specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   specType: "IM",                 // Informatie Model
