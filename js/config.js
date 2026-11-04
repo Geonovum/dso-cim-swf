@@ -1,6 +1,18 @@
+// Maakt de door Imvertor gegenereerde catalogus geldig HTML: een plaatje met hetzelfde id als zijn sectie
+// verliest dat id (de imagemap gebruikt usemap/name).
+function herstelCatalogus(_config, document) {
+  document.querySelectorAll("img[id]").forEach((img) => {
+    if (document.querySelectorAll(`[id="${CSS.escape(img.id)}"]`).length > 1) {
+      img.removeAttribute("id");
+    }
+  });
+}
+
 let respecConfig = {
   useLogo: true,
   useLabel: true,
+  // postProcess van organisation-config-dso.js behouden, anders overschrijft deze config die bij het samenvoegen
+  postProcess: [...(organisationConfig.postProcess || []), herstelCatalogus],
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Conceptueel Informatiemodel Samenwerkfunctionaliteit",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
@@ -51,12 +63,13 @@ let respecConfig = {
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/dso-cim-swf",
   // Create PDF and link to file in header (optional):
-  alternateFormats: [
-      {
-          label: "pdf",
-          uri: "template.pdf",
-      },
-  ],
+  // Tijdelijk uit: de centrale build controleert de pdf-link voordat de pdf gemaakt is.
+  //alternateFormats: [
+  //    {
+  //        label: "pdf",
+  //        uri: "template.pdf",
+  //    },
+  //],
   //-- localBiblio: lokale bibliografie, voor verwijzigingen
   //-- NB: kijk eerst naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
