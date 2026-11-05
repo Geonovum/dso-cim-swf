@@ -16,10 +16,10 @@ let respecConfig = {
   // title is verplicht! Neem hier de titel van het document op ----------------------
   title: "Conceptueel Informatiemodel Samenwerkfunctionaliteit",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
-  specStatus: "wv",                   // Werkversie
+  //specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
   //specStatus: "vv",               // Versie ter vaststelling
-  //specStatus: "def",              // Vastgestelde versie
+  specStatus: "def",              // Vastgestelde versie
   //specStatus: "basis",            // Basis Document
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   specType: "IM",                 // Informatie Model
@@ -34,6 +34,11 @@ let respecConfig = {
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2025-04-29",
+  // TODO vóór de release: publishDate invullen (yyyy-mm-dd), zelfde datum als bij 1.1 in 07-Versiegeschiedenis.md
+  //-- Deze versie: zelfde map als waarin de centrale publicatieworkflow de release zet
+  //-- (pubDomain/specStatus-specType-shortName-publishDate). Vorige versie volgt nog het patroon
+  //-- van organisation-config-dso.js (dso/dso-cim-swf-20250429).
+  thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
