@@ -48,7 +48,7 @@ conceptueel informatiemodel (CIM) dat richting geeft aan de uitwerking van het
 informatiedomein en de samenhang met aanpalende domeinen borgt.
 
 <figure id="Figure-CIM-Overzicht">
-<img src="media/CIM-Overzicht.png" alt="">
+<img src="media/CIM-Overzicht.png" alt="Overzicht van alle Conceptuele Informatiemodellen in het DSO">
 <figcaption>Overzicht van alle Conceptuele Informatiemodellen in het DSO</figcaption>
 </figure>
 
@@ -56,15 +56,15 @@ De onderstaande conceptuele informatiemodellen zijn beschikbaar. De modellen
 zijn in verschillende stadia van ontwikkeling en de links kunnen zowel naar
 werk- als publicatieversies verwijzen.
 
- - [CIM-AM](https://geonovum.github.io/dso-cim-am/): Conceptueel Informatiemodel Aanvragen en  meldingen (werkversie).
+ - [CIM-AM](https://geonovum.github.io/dso-cim-am/): Conceptueel Informatiemodel Aanvragen en meldingen (werkversie).
  - [CIM-HLP](https://geonovum.github.io/dso-cim-hlp/): Conceptueel Informatiemodel Help en ondersteuning (werkversie).
- - [CIM-MAC](https://geonovum.github.io/dso-cim-mac/) Conceptueel Informatiemodel Machtigen (werkversie).
+ - [CIM-MAC](https://geonovum.github.io/dso-cim-mac/): Conceptueel Informatiemodel Machtigen (werkversie).
  - [CIM-OI](https://geonovum.github.io/dso-cim-oi/): Conceptueel Informatiemodel Omgevingsinformatie (werkversie).
  - [CIM-OP](https://docs.geostandaarden.nl/dso/dso-cim-op/): Conceptueel Informatiemodel Officiële publicaties.
  - [CIM-ORG](https://geonovum.github.io/dso-cim-org/): Conceptueel Informatiemodel (Overheids-)Organisaties (werkversie).
- - [CIM-OW](https://geonovum.github.io/dso-cim-ow/): Conceptueel Informatiemodel Omgevingswet (werkversie).
+ - [CIM-OW](https://docs.geostandaarden.nl/dso/dso-cim-ow/): Conceptueel Informatiemodel Omgevingswet.
  - [CIM-PDC](https://geonovum.github.io/dso-cim-pdc/): Conceptueel Informatiemodel Producten- en Dienstencatalogus (werkversie).
- - [CIM-SWF](https://geonovum.github.io/dso-cim-swf/): Conceptueel Informatiemodel Samenwerken (werkversie).
+ - [CIM-SWF](https://docs.geostandaarden.nl/dso/dso-cim-swf/): Conceptueel Informatiemodel Samenwerkfunctionaliteit (dit document).
  - [CIM-TR](https://geonovum.github.io/dso-cim-tr/): Conceptueel Informatiemodel Toepasbare regels (werkversie).
 
 Alhoewel elk conceptueel informatiemodel één informatiedomein afbeeldt, zijn er

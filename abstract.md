@@ -1,4 +1,4 @@
-Binnen DSO worden verschillende informatiedomeinen onderkend: elk informatiedomein groepeert informatieobjecten met maximale samenhang en vormt logische bouwblokken voor de informatievoorziening van DSO. Dit document beschrijft het 'Conceptueel Informatiemodel Samenwerkfuctionaliteit' (CIM-SWF).
+Binnen DSO worden verschillende informatiedomeinen onderkend: elk informatiedomein groepeert informatieobjecten met maximale samenhang en vormt logische bouwblokken voor de informatievoorziening van DSO. Dit document beschrijft het 'Conceptueel Informatiemodel Samenwerkfunctionaliteit' (CIM-SWF).
 
 De belangrijkste componenten van het CIM-SWF zijn:
  - Samenwerking. Hiermee worden de kenmerken bedoeld die een specifiek samenwerkingsproces karakteriseren. Een samenwerking heeft een begin en een einde.
