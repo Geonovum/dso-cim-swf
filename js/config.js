@@ -90,7 +90,7 @@ let respecConfig = {
     GASSW: {
       id: "GAS-SW",
       title: "Globale Architectuurschets Samenwerkfunctionaliteit",
-      href: "https://iplo.nl/publish/library/219/dso_-_gas_-_samenwerkingsfunctionaliteit.pdf",
+      href: "https://iplo.nl/publish/pages/243505/dso_gas_samenwerkingsfunctionaliteit.pdf",
       status: "Versie 2.0 (definitief)",
       publisher: "Geonovum",
       authors: ["Bas Crompvoets" , "Nico Plat" , "Silvion Moesan" ],
